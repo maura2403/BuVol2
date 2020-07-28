@@ -4,12 +4,14 @@ body{
     background-color: rgb(70, 163, 163);
 }
 nav{   
+    border: 2px blue dashed;
     width: 100%;
     font-family: 'Rubik', sans-serif;
     background-color: #F56514;
+    display: flex;
 }
 ul{
-    border: 2px dashed blue;
+    
     list-style: none;
     display: flex;
     margin: 0;
@@ -42,11 +44,22 @@ img{
 }
 
 @media (max-width: 768px){
+    nav{
+        justify-content: space-between;
+        
+    }
+   
     ul{
         display: none;
     }
     button{
+        margin: 5%;
         display: block;
+        float: right;
+        background-color:  #F87D36;
+        color: black;
+        padding: 4em;
+        
     }
     
 }
