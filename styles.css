@@ -1,1 +1,22 @@
 
+body{
+    margin: 0;
+    background-color: rgb(70, 163, 163);
+}
+nav{
+    
+    background-color: #F56514;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+li{ 
+    padding: 1%; 
+    text-align: center;
+    
+    flex-grow: 1;
+}
+li:hover{
+    background-color: #F87D36;
+}
