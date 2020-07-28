@@ -4,6 +4,7 @@ body{
     background-color: rgb(70, 163, 163);
 }
 nav{   
+    width: 100%;
     font-family: 'Rubik', sans-serif;
     background-color: #F56514;
 }
@@ -12,11 +13,13 @@ ul{
     list-style: none;
     display: flex;
     margin: 0;
+    padding: 0;
+    justify-content: flex-start;
 }
 li{ 
     
     text-align: center;
-    
+    height: auto;
     flex-grow: 1;
 }
 li:hover{
@@ -24,8 +27,26 @@ li:hover{
 }
 
 a{
+    box-sizing: border-box;
     padding: 4em;
     text-decoration: none;
     display: block;
     color: white;
+    height: 100%;
+}
+button{
+    display: none;
+}
+img{
+   height: 2em;
+}
+
+@media (max-width: 768px){
+    ul{
+        display: none;
+    }
+    button{
+        display: block;
+    }
+    
 }
