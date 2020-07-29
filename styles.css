@@ -4,7 +4,6 @@ body{
     background-color: rgb(70, 163, 163);
 }
 nav{   
-    border: 2px blue dashed;
     width: 100%;
     font-family: 'Rubik', sans-serif;
     background-color: #F56514;
@@ -27,10 +26,9 @@ li{
 li:hover{
     background-color: #F87D36;
 }
-
 a{
     box-sizing: border-box;
-    padding: 4em;
+    padding: 4em 6em;
     text-decoration: none;
     display: block;
     color: white;
@@ -40,26 +38,30 @@ button{
     display: none;
 }
 img{
-   height: 2em;
+   height: 2rem;
 }
 
 @media (max-width: 768px){
     nav{
         justify-content: space-between;
-        
     }
    
     ul{
         display: none;
     }
     button{
-        margin: 5%;
-        display: block;
-        float: right;
-        background-color:  #F87D36;
-        color: black;
-        padding: 4em;
         
+        display: block;
+        
+        background-color:#F56514 ;
+        color: white;
+        padding: 2em;
+        border: none;
+        font-size: 1.5em;
     }
+    button:hover{
+        background-color: #F87D36;
+    }
+   
     
 }
