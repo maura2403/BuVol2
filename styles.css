@@ -1,4 +1,7 @@
 
+*,*::after,*::before{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     background-color: rgb(70, 163, 163);
@@ -9,7 +12,7 @@ nav{
     background-color: #F56514;
     display: flex;
 }
-ul{
+.navItems{
     
     list-style: none;
     display: flex;
@@ -18,7 +21,6 @@ ul{
     justify-content: flex-start;
 }
 li{ 
-    
     text-align: center;
     height: auto;
     flex-grow: 1;
@@ -26,8 +28,7 @@ li{
 li:hover{
     background-color: #F87D36;
 }
-a{
-    box-sizing: border-box;
+li a{
     padding: 4em 6em;
     text-decoration: none;
     display: block;
@@ -38,29 +39,70 @@ button{
     display: none;
 }
 img{
-   height: 2rem;
+  height: 6rem;
 }
-
+.menu{
+    display: none;
+}
+.arrow  {
+    display: none;
+}
 @media (max-width: 768px){
     nav{
         justify-content: space-between;
     }
-   
-    ul{
-        display: none;
-    }
-    button{
+   .navItems{
+       display: none;
+   }
+   .menu{
+       display: none;
+       margin: 0;
+   }
+    .activeMenu{
         
         display: block;
-        
+        background-color: #F87D36;
+        width: 50%;
+        height: 25%;
+        position: relative;
+        top: 0;
+        right: 0;
+        float: right;
+        border-radius: 10px;
+        border-top-right-radius: unset;
+    }
+   
+   .menuList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   }
+   .menuList li a{
+    padding: 5%;
+   }
+   
+
+   .quienesSomos{
+       border-top-left-radius: 10px;
+       border-bottom: 1px solid #F56514;
+   }
+   .contacto{
+       border-bottom-left-radius: 10px;
+       border-bottom-right-radius: 10px ;
+       border-top: 1px solid #F56514;
+   }
+    button{
+
+        display: block;
         background-color:#F56514 ;
         color: white;
-        padding: 2em;
+        padding: 1em 2em;
         border: none;
         font-size: 1.5em;
+        
     }
-    button:hover{
-        background-color: #F87D36;
+    button:focus{
+        background-color: #F87D36 ;
     }
    
     
